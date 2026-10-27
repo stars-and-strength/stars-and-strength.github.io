@@ -760,3 +760,161 @@ section {
     font-size: 18px;
   }
 }
+
+/* WALL OF HOPE PROJECT SECTION */
+
+.projects {
+  background-color: #142f4c;
+  color: white;
+  padding: 85px 20px;
+}
+
+.projects .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projectsTitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.projects .unique {
+  color: #f5b51b;
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 55px;
+}
+
+.projectFeature {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 55px;
+  align-items: center;
+}
+
+.projectPhoto img {
+  width: 100%;
+  max-height: 620px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #e8ac22;
+  display: block;
+}
+
+.projectDetails {
+  text-align: left;
+}
+
+.projectLabel {
+  color: #f5b51b;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+.projectDetails h3 {
+  color: white;
+  font-size: 38px;
+  font-weight: 500;
+  margin: 0 0 12px;
+}
+
+.projectSubtitle {
+  color: #f5b51b;
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+
+.projectText {
+  color: #f0f0f0;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.projectInstructions {
+  background: rgba(255, 255, 255, 0.06);
+  border-left: 3px solid #f5b51b;
+  border-radius: 6px;
+  padding: 22px;
+  margin: 25px 0;
+}
+
+.projectInstructions h4 {
+  color: #f5b51b;
+  font-size: 18px;
+  margin: 0 0 14px;
+}
+
+.projectInstructions p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 8px 0;
+}
+
+.projectLocation {
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.upcomingProjects {
+  text-align: center;
+  margin: 75px auto 0;
+  max-width: 760px;
+  border-top: 1px solid rgba(245, 181, 27, 0.4);
+  padding-top: 35px;
+}
+
+.upcomingProjects h3 {
+  color: #f5b51b;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.upcomingProjects p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #e5e5e5;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 60px 20px;
+  }
+
+  .projectsTitle {
+    font-size: 30px;
+  }
+
+  .projectFeature {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .projectPhoto {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .projectPhoto img {
+    max-height: 520px;
+  }
+
+  .projectDetails h3 {
+    font-size: 30px;
+  }
+
+  .upcomingProjects {
+    margin-top: 50px;
+  }
+}
+
