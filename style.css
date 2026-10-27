@@ -955,16 +955,3 @@ section {
   content: none;
   display: none;
 }
-
-.projects .unique {
-  position: relative;
-  text-align: center;
-  color: #f5b51b;
-  font-size: clamp(15px, 2.5vw, 19px);
-  font-style: italic;
-  line-height: 1.5;
-  margin: 0 auto 80px;
-  padding: 0;
-  border: none;
-}
-
