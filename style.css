@@ -918,3 +918,53 @@ section {
   }
 }
 
+/* PROJECTS HEADING - CLEAN DESIGN */
+
+.projects .projectsTitle {
+  position: relative;
+  text-align: center;
+  font-size: clamp(30px, 5vw, 42px);
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin: 0 auto 38px;
+  padding: 0;
+  border: none;
+}
+
+/* Gold divider with centered star */
+.projects .projectsTitle::after {
+  content: "★";
+  display: block;
+  width: 210px;
+  margin: 15px auto 0;
+  color: #f5b51b;
+  font-size: 20px;
+  line-height: 20px;
+  background:
+    linear-gradient(#f5b51b, #f5b51b)
+    left center / 85px 2px no-repeat,
+    linear-gradient(#f5b51b, #f5b51b)
+    right center / 85px 2px no-repeat;
+}
+
+/* Prevent older decorative rules overlapping */
+.projects .projectsTitle::before,
+.projects .unique::before,
+.projects .unique::after {
+  content: none;
+  display: none;
+}
+
+.projects .unique {
+  position: relative;
+  text-align: center;
+  color: #f5b51b;
+  font-size: clamp(15px, 2.5vw, 19px);
+  font-style: italic;
+  line-height: 1.5;
+  margin: 0 auto 55px;
+  padding: 0;
+  border: none;
+}
+
