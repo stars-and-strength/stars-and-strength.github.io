@@ -968,3 +968,51 @@ section {
   border: none;
 }
 
+/* FINAL FIX - PROJECTS HEADING */
+
+.projects .projectsTitle {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto 12px;
+  padding: 0;
+  position: relative;
+  text-align: center;
+}
+
+.projects .projectsTitle::before {
+  content: none;
+  display: none;
+}
+
+.projects .projectsTitle::after {
+  content: "★";
+  position: static;
+  display: block;
+  transform: none;
+
+  width: 210px;
+  height: 24px;
+  margin: 18px auto 0;
+  padding: 0;
+
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #f5b51b;
+
+  background:
+    linear-gradient(#f5b51b, #f5b51b)
+      left center / 85px 2px no-repeat,
+    linear-gradient(#f5b51b, #f5b51b)
+      right center / 85px 2px no-repeat;
+}
+
+.projects .unique {
+  display: block;
+  position: static;
+  margin: 12px auto 55px;
+  padding: 0;
+  line-height: 1.6;
+  text-align: center;
+}
+
